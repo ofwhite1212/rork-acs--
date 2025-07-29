@@ -56,7 +56,6 @@ export default function TabLayout() {
           <Tabs.Screen name="adLocations/index" />
           <Tabs.Screen name="advertisers/index" />
           <Tabs.Screen name="payments/index" />
-          <Tabs.Screen name="reports" />
           <Tabs.Screen name="settings" />
         </Tabs>
       </WebLayout>
@@ -114,13 +113,6 @@ export default function TabLayout() {
         options={{
           title: "支払い管理",
           tabBarIcon: ({ color }) => <CreditCard size={24} color={color} />,
-        }}
-      />
-      <Tabs.Screen
-        name="reports"
-        options={{
-          title: "レポート",
-          tabBarIcon: ({ color }) => <BarChart3 size={24} color={color} />,
         }}
       />
       <Tabs.Screen
