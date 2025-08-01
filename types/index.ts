@@ -34,7 +34,18 @@ export type Advertiser = {
   createdAt: string;
 };
 
-
+export type Inquiry = {
+  id: string;
+  senderName: string;
+  senderEmail: string;
+  senderType: "advertiser" | "salesRep" | "adLocation" | "general";
+  subject: string;
+  content: string;
+  status: "unread" | "read" | "resolved" | "pending";
+  priority: "low" | "medium" | "high";
+  createdAt: string;
+  salesRepId?: string;
+};
 
 export type Advertisement = {
   id: string;
